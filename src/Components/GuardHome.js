@@ -65,7 +65,7 @@ const GuardHome = () =>{
 
   onMessage(messaging, (payload) =>{
     console.log(payload)
-    alert(payload)
+    alert(payload.notification.title + " \n "+  payload.notification.body)
    })
 
 
